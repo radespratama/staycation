@@ -16,8 +16,7 @@
         <activity
             android:name=".DetailSearchActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".DetailFavoriteActivity"
             android:exported="false"

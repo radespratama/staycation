@@ -5,14 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
     ImageView searchContent;
     ImageView toFavoriteOne, toFavoriteTwo, toFavoriteThree, toFavoriteFour;
     String contentTitle, contentLocation, contentDescription, contentRating, contentPrice;
     RelativeLayout contentDetailBackground;
+
+    FloatingActionButton floatingActionAppOne, floatingActionAppTwo;
+    Animation icOpen, icClose, icRotateForward, icRotateBackward;
+
+    boolean isOpen = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         toFavoriteTwo = findViewById(R.id.toFavoriteTwo);
         toFavoriteThree = findViewById(R.id.toFavoriteThree);
         toFavoriteFour = findViewById(R.id.toFavoriteFour);
+
+        floatingActionAppOne = findViewById(R.id.floatingActionAppOne);
+        floatingActionAppTwo = findViewById(R.id.floatingActionAppTwo);
 
         toFavoriteOne.setOnClickListener(new View.OnClickListener() {
             @Override
