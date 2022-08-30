@@ -6,12 +6,14 @@
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/custom_button_rounded.xml" value="0.2635" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/custom_input_search.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_arrow.xml" value="0.273" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_arrow_dark.xml" value="0.1635" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_bell_icon.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_heart.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_search_icon.xml" value="0.273" />
-        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_detail_favorite.xml" value="0.2754782700075322" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_detail_favorite.xml" value="0.1" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_detail_search.xml" value="0.2754782700075322" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_login.xml" value="0.271875" />
-        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_main.xml" value="0.4943473792394656" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_main.xml" value="0.2754782700075322" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_splash_screen.xml" value="0.271875" />
       </map>
     </option>

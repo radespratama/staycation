@@ -76,25 +76,15 @@
             android:textColor="@color/gray_900"
             android:fontFamily="@font/outfit_bold"
             />
-        
-        <EditText
+
+        <ImageView
             android:id="@+id/searchContent"
-            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Search Destination"
-            android:inputType="text"
-            android:paddingLeft="10dp"
-            android:paddingRight="20dp"
-            android:fontFamily="@font/outfit_regular"
-            android:textSize="14dp"
-            android:textColor="@color/gray_900"
-            android:textColorHint="@color/gray_300"
-            android:background="@drawable/custom_input_search"
-            android:drawableEnd="@drawable/ic_search_icon"
-            android:drawablePadding="12dp"
-            android:maxLength="40"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/search_bar"
             />
+
 
         <LinearLayout
             android:id="@+id/categoryContent"

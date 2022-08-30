@@ -8,10 +8,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DetailFavoriteActivity extends AppCompatActivity {
     ImageView buttonBackToHome;
-    TextView detailTitle, detailLocation, detailDescription, detailRating, detailPrice;
+    TextView detailTitle, detailLocation, detailDescription, detailRating, detailPrice, detailBooking;
     RelativeLayout detailImage;
     String contentTitle, contentLocation, contentDescription, contentRating, contentPrice;
     Integer contentImage;
@@ -30,6 +31,7 @@ public class DetailFavoriteActivity extends AppCompatActivity {
         detailRating = findViewById(R.id.contentDetailRating);
         detailPrice = findViewById(R.id.contentDetailPrice);
         detailImage = findViewById(R.id.contentDetailBackground);
+        detailBooking = findViewById(R.id.buttonHandlerBooking);
 
         Bundle bundleContent = getIntent().getExtras();
 
@@ -46,6 +48,13 @@ public class DetailFavoriteActivity extends AppCompatActivity {
         detailRating.setText(contentRating);
         detailPrice.setText(contentPrice);
         detailImage.setBackground(getResources().getDrawable(contentImage));
+
+        detailBooking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext() , "Oops, service unavailable!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         buttonBackToHome.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".DetailSearchActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/buttonBackToHome"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@color/gray_900"
+            android:textSize="16dp"
+            android:fontFamily="@font/outfit_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+
+        <EditText
+            android:id="@+id/searchContent"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Search Destination"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/outfit_regular"
+            android:textSize="14dp"
+            android:textColor="@color/gray_900"
+            android:textColorHint="@color/gray_300"
+            android:background="@drawable/custom_input_search"
+            android:drawableEnd="@drawable/ic_search_icon"
+            android:drawablePadding="12dp"
+            android:maxLength="40"
+            />
+
+        <TextView
+            android:layout_marginTop="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Search"
+            android:fontFamily="@font/outfit_bold"
+            android:textSize="18dp"
+            android:textColor="@color/gray_900"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_time"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuta Beach"
+                    android:textColor="@color/gray_900"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_x"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_time"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bali Resort"
+                    android:textColor="@color/gray_900"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_x"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_time"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bromo"
+                    android:textColor="@color/gray_900"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_x"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/favoriteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_900"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="Favorite Place"
+                    android:textSize="18dp"
+                    android:layout_weight="4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Explore"
+                    android:fontFamily="@font/outfit_regular"
+                    android:textColor="@color/gray_300"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:scrollbars="none"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/toFavoriteTwo"
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:contentDescription=""
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_destination_two" />
+
+                    <ImageView
+                        android:id="@+id/toFavoriteThree"
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:contentDescription=""
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_destination_three" />
+
+                    <ImageView
+                        android:id="@+id/toFavoriteFour"
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:contentDescription=""
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_destination_four" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputFilter;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
-    EditText searchContent;
+    ImageView searchContent;
     ImageView toFavoriteOne, toFavoriteTwo, toFavoriteThree, toFavoriteFour;
     String contentTitle, contentLocation, contentDescription, contentRating, contentPrice;
     RelativeLayout contentDetailBackground;
@@ -116,9 +114,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        searchContent.setFilters(new InputFilter[] {
-                new InputFilter.LengthFilter(30),
+        searchContent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toDetailSearchIntent = new Intent(MainActivity.this, DetailSearchActivity.class);
+                startActivity(toDetailSearchIntent);
+            }
         });
     }
 }
