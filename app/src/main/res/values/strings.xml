@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Staycation Android</string>
+    <string name="content_explanation"><b>100+</b> people have explored</string>
+
+    // Splash Screen
+    <string name="SSName">© 2022 Putu Rades Pratama</string>
+
+    // Main Screen
+    <string name="title_search">Where do you <br />want to explore today?</string>
+
+    // Detail Screen
+    <string name="content_title">Kuta Beach</string>
+    <string name="content_location">Bali, Indonesia</string>
+    <string name="content_description">Bali is an island in Indonesia known for its verdant volcanoes, unique rice terraces, beaches, and beautiful coral reefs. Before becoming a tourist attraction, Kuta was a trading port where local products were traded to buyers from outside Bali.</string>
+    <string name="content_rating">4,8</string>
+    <string name="content_price">$245,00</string>
+
+    <string name="content_title_two">Bromo Mountain</string>
+    <string name="content_location_two">Jawa Timur, Indonesia</string>
+    <string name="content_description_two">The area is one of the most visited tourist destinations in East Java, and the volcano is included in the Bromo Tengger Semeru National Park. The name Bromo comes from the Javanese pronunciation of Brahma, the Hindu god of creation.</string>
+    <string name="content_rating_two">4,0</string>
+    <string name="content_price_two">$105,00</string>
+
+    <string name="content_title_three">Raja Ampat</string>
+    <string name="content_location_three">Papua, Indonesia</string>
+    <string name="content_description_three">Raja Ampat, or the Four Kings, is an archipelago located off the northwest tip of Birds Head Peninsula on the island of New Guinea, in Indonesia West Papua province. It comprises over 1,500 small islands, cays, and shoals surrounding the four main islands of Misool, Salawati, Batanta, and Waigeo, and the smaller island of Kofiau.</string>
+    <string name="content_rating_three">4,3</string>
+    <string name="content_price_three">$345,00</string>
+
+    <string name="content_title_four">Pulau Komodo</string>
+    <string name="content_location_four">NTT, Indonesia</string>
+    <string name="content_description_four">Komodo (Indonesian: Pulau Komodo) is one of the 17,508 islands that comprise the Republic of Indonesia. The island is particularly notable as the habitat of the Komodo dragon, the largest lizard on Earth, which is named after the island.</string>
+    <string name="content_rating_four">4,0</string>
+    <string name="content_price_four">$545,00</string>
+</resources>
