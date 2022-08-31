@@ -13,14 +13,17 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        SharedPreferences value = getSharedPreferences("LoginPreferences", MODE_PRIVATE);
-        Boolean isAlreadyLogin = value.getBoolean("isLoged", false);
+        SharedPreferences dataAuthPreference = getSharedPreferences("UserInformation", MODE_PRIVATE);
+        final Boolean isAlreadyLogin = dataAuthPreference.getBoolean("isLogged", false);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent loadingIntent = new Intent(SplashScreenActivity.this, StartActivity.class);
-                startActivity(loadingIntent);
+                if(isAlreadyLogin){
+                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                } else {
+                    startActivity(new Intent(SplashScreenActivity.this, StartActivity.class));
+                }
             }
         }, 2000);
     }

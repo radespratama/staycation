@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SharedPreferences dataAuthPreference = getSharedPreferences("UserInformation", MODE_PRIVATE);
 
         searchContent = findViewById(R.id.searchContent);
 
@@ -48,9 +50,8 @@ public class MainActivity extends AppCompatActivity {
         icRotateBackward = AnimationUtils.loadAnimation(this, R.anim.ic_rotate_backward);
         icRotateForward = AnimationUtils.loadAnimation(this, R.anim.ic_rotate_forward);
 
-        SharedPreferences valueUsername = getSharedPreferences("LoginPreferences", MODE_PRIVATE);
-        String printUsername = valueUsername.getString("usernameValue", "Anonymous Person");
-        Boolean isAlreadyLogin = valueUsername.getBoolean("isLoged", false);
+        String printUsername = dataAuthPreference.getString("username", "");
+        showUserName.setText(printUsername);
 
         floatingActionAppOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,12 +64,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 animateIc();
-                SharedPreferences.Editor edit = valueUsername.edit();
-                edit.remove("LoginPreferences");
-                edit.apply();
 
-                Intent moveToLogin = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(moveToLogin);
+                getSharedPreferences("UserInformation", MODE_PRIVATE).edit().clear().apply();
+                startActivity(new Intent(MainActivity.this, StartActivity.class));
             }
         });
 

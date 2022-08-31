@@ -60,11 +60,11 @@
         >
 
         <EditText
-            android:id="@+id/usernameField"
+            android:id="@+id/emailFieldLogin"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:hint="Phone, email or username"
-            android:inputType="text"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
             android:paddingLeft="10dp"
             android:paddingRight="20dp"
             android:fontFamily="@font/outfit_regular"
@@ -79,7 +79,7 @@
             />
 
         <EditText
-            android:id="@+id/passwordField"
+            android:id="@+id/passwordFieldLogin"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:hint="Password"
@@ -140,7 +140,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/buttonHandlerSignIn"
+            android:id="@+id/buttonHandlerLogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"

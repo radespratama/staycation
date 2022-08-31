@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -13,8 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText usernameField, passwordField;
-    TextView buttonHandlerSignIn, toRegisterActivity;
+    EditText emailFieldLogin, passwordFieldLogin;
+    TextView buttonHandlerLogin, toRegisterActivity;
     ImageView buttonBackToStartOne;
 
     @Override
@@ -22,22 +21,33 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        usernameField = findViewById(R.id.usernameField);
-        passwordField = findViewById(R.id.passwordField);
-        buttonHandlerSignIn = findViewById(R.id.buttonHandlerSignIn);
+        emailFieldLogin = findViewById(R.id.emailFieldLogin);
+        passwordFieldLogin = findViewById(R.id.passwordFieldLogin);
+        buttonHandlerLogin = findViewById(R.id.buttonHandlerLogin);
 
         buttonBackToStartOne = findViewById(R.id.buttonBackToStartOne);
         toRegisterActivity = findViewById(R.id.toRegisterActivity);
 
-        buttonHandlerSignIn.setOnClickListener(new View.OnClickListener() {
+        SharedPreferences dataAuthPreference = getSharedPreferences("UserInformation", MODE_PRIVATE);
+
+        buttonHandlerLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences valuePreference = getSharedPreferences("LoginPreferences", MODE_PRIVATE);
-                SharedPreferences.Editor editor = valuePreference.edit();
+                try {
+                    String emailLogin = emailFieldLogin.getText().toString();
+                    String passwordLogin = passwordFieldLogin.getText().toString();
 
-                String username = usernameField.getText().toString();
-                String password = passwordField.getText().toString();
+                    String emailSP = dataAuthPreference.getString("email", "Email is not available");
+                    String passwordSP = dataAuthPreference.getString("password", "Password is incorrect");
 
+                    if(emailLogin.equals(emailSP) && passwordLogin.equals(passwordSP)){
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Email or Password incorrect", Toast.LENGTH_SHORT).show();
+                    }
+                } catch(Exception e){
+
+                }
             }
         });
 
