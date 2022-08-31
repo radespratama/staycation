@@ -4,21 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/custom_button_rounded.xml" value="0.2635" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/custom_button_rounded_white.xml" value="0.255" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/custom_input_search.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_arrow.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_arrow_dark.xml" value="0.1635" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_bell_icon.xml" value="0.273" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_email.xml" value="0.255" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_heart.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_home.xml" value="0.2635" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_lock.xml" value="0.255" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_logout.xml" value="0.2635" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_profile.xml" value="0.2635" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_search_icon.xml" value="0.273" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/drawable/ic_send.xml" value="0.2635" />
-        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_detail_favorite.xml" value="0.1" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_detail_favorite.xml" value="0.2754782700075322" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_detail_search.xml" value="0.2754782700075322" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_login.xml" value="0.271875" />
-        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_main.xml" value="0.559304366378929" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_main.xml" value="0.2086956590966153" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_register.xml" value="0.5583634175691937" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_splash_screen.xml" value="0.271875" />
+        <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_start.xml" value="0.2231722958529286" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/layout/activity_success_create_user.xml" value="0.18365218000502148" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.2231722958529286" />
         <entry key="..\:/Labs/programming-learning/PRACTICE/StaycationAndroid/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2231722958529286" />

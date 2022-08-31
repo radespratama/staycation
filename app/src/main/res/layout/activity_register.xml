@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/buttonBackToStartOne"
+            android:id="@+id/buttonBackToStartTwo"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentLeft="true"
@@ -33,8 +33,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/signInTitle"
-            android:textAlignment="textStart"
+            android:text="Sign Up"
+            android:textAlignment="center"
             android:fontFamily="@font/outfit_bold"
             android:textColor="@color/gray_900"
             android:textSize="30dp"
@@ -43,11 +43,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/signInTitleTwo"
-            android:textAlignment="textStart"
+            android:text="Create an account so you can explore this apps."
+            android:textAlignment="center"
             android:fontFamily="@font/outfit_regular"
             android:textColor="@color/gray_900"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:layout_marginTop="15dp"
             />
 
@@ -63,7 +63,7 @@
             android:id="@+id/usernameField"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:hint="Phone, email or username"
+            android:hint="Username"
             android:inputType="text"
             android:paddingLeft="10dp"
             android:paddingRight="20dp"
@@ -73,6 +73,25 @@
             android:textColorHint="@color/gray_300"
             android:background="@drawable/custom_input_search"
             android:drawableEnd="@drawable/ic_profile"
+            android:drawablePadding="12dp"
+            android:maxLength="50"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="23dp"
+            android:fontFamily="@font/outfit_regular"
+            android:textSize="14dp"
+            android:textColor="@color/gray_900"
+            android:textColorHint="@color/gray_300"
+            android:background="@drawable/custom_input_search"
+            android:drawableEnd="@drawable/ic_email"
             android:drawablePadding="12dp"
             android:maxLength="50"
             android:layout_marginTop="10dp"
@@ -93,7 +112,7 @@
             android:background="@drawable/custom_input_search"
             android:drawableEnd="@drawable/ic_lock"
             android:drawablePadding="12dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             />
 
     </LinearLayout>
@@ -106,41 +125,8 @@
         android:layout_alignParentBottom="true"
         >
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/signUp"
-                android:textColor="@color/gray_900"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/outfit_regular"
-                android:textSize="16dp"
-                android:layout_marginRight="5dp"
-                />
-
-            <TextView
-                android:id="@+id/toRegisterActivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/signUpLink"
-                android:textColor="@color/gray_900"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/outfit_regular"
-                android:textSize="16dp"
-                />
-
-        </LinearLayout>
-
         <TextView
-            android:id="@+id/buttonHandlerSignIn"
+            android:id="@+id/buttonHandlerRegister"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
@@ -149,7 +135,7 @@
             android:gravity="center"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:text="Sign In"
+            android:text="Create an Account"
             android:textColor="@color/gray_900"
             android:textSize="18dp"
             />

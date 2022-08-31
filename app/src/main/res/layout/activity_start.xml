@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="290dp"
+            android:src="@drawable/img_screen"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hey!, Welcome"
+            android:textColor="@color/gray_900"
+            android:textSize="20dp"
+            android:fontFamily="@font/outfit_bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore the journey with us"
+            android:textColor="@color/gray_300"
+            android:textSize="18dp"
+            android:fontFamily="@font/outfit_regular"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goToSignUpActivity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_button_rounded"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Get Started"
+            android:textColor="@color/gray_900"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/goToSignInActivity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button_rounded_white"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="I Already have an account"
+            android:textColor="@color/gray_900"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

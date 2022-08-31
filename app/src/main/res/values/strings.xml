@@ -2,6 +2,12 @@
     <string name="app_name">Staycation Android</string>
     <string name="content_explanation"><b>100+</b> people have explored</string>
 
+    // Login Screen
+    <string name="signUp">Don`t have an account?</string>
+    <string name="signUpLink"><b>Register</b></string>
+    <string name="signInTitle"><b>Let`s sign you in.</b></string>
+    <string name="signInTitleTwo">Welcome back. <br />You`ve been missed!</string>
+
     // Splash Screen
     <string name="SSName">© 2022 Putu Rades Pratama</string>
 

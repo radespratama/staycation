@@ -14,8 +14,20 @@
         android:theme="@style/Theme.StaycationAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".StartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".DetailSearchActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".DetailFavoriteActivity"
@@ -36,6 +48,7 @@
             android:name=".SplashScreenActivity"
             android:exported="true"
             android:screenOrientation="portrait"
+            android:noHistory="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,20 +3,23 @@ package com.devplayhouse.staycationandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView searchContent;
-    ImageView toFavoriteOne, toFavoriteTwo, toFavoriteThree, toFavoriteFour;
+    ImageView toFavoriteOne, toFavoriteTwo, toFavoriteThree, toFavoriteFour, searchContent;
     String contentTitle, contentLocation, contentDescription, contentRating, contentPrice;
     RelativeLayout contentDetailBackground;
+    TextView showUserName;
 
     FloatingActionButton floatingActionAppOne, floatingActionAppTwo;
     Animation icOpen, icClose, icRotateForward, icRotateBackward;
@@ -37,6 +40,37 @@ public class MainActivity extends AppCompatActivity {
 
         floatingActionAppOne = findViewById(R.id.floatingActionAppOne);
         floatingActionAppTwo = findViewById(R.id.floatingActionAppTwo);
+
+        showUserName = findViewById(R.id.showUserName);
+
+        icOpen = AnimationUtils.loadAnimation(this, R.anim.ic_open);
+        icClose = AnimationUtils.loadAnimation(this, R.anim.ic_close);
+        icRotateBackward = AnimationUtils.loadAnimation(this, R.anim.ic_rotate_backward);
+        icRotateForward = AnimationUtils.loadAnimation(this, R.anim.ic_rotate_forward);
+
+        SharedPreferences valueUsername = getSharedPreferences("LoginPreferences", MODE_PRIVATE);
+        String printUsername = valueUsername.getString("usernameValue", "Anonymous Person");
+        Boolean isAlreadyLogin = valueUsername.getBoolean("isLoged", false);
+
+        floatingActionAppOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animateIc();
+            }
+        });
+
+        floatingActionAppTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animateIc();
+                SharedPreferences.Editor edit = valueUsername.edit();
+                edit.remove("LoginPreferences");
+                edit.apply();
+
+                Intent moveToLogin = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(moveToLogin);
+            }
+        });
 
         toFavoriteOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,5 +167,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(toDetailSearchIntent);
             }
         });
+    }
+
+    private void animateIc(){
+        if(isOpen){
+            floatingActionAppOne.startAnimation(icRotateForward);
+            floatingActionAppTwo.startAnimation(icClose);
+            floatingActionAppTwo.setClickable(false);
+            isOpen = false;
+        } else {
+            floatingActionAppOne.startAnimation(icRotateBackward);
+            floatingActionAppTwo.startAnimation(icOpen);
+            floatingActionAppTwo.setClickable(true);
+            isOpen = true;
+        }
     }
 }

@@ -55,9 +55,9 @@
                         />
 
                     <TextView
+                        android:id="@+id/showUserName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rades Pratama"
                         android:textSize="16dp"
                         android:textColor="@color/gray_900"
                         android:fontFamily="@font/outfit_semi_bold"
@@ -232,8 +232,8 @@
                             android:id="@+id/toFavoriteOne"
                             android:layout_width="150dp"
                             android:layout_height="190dp"
-                            android:contentDescription=""
                             android:layout_marginRight="10dp"
+                            android:contentDescription=""
                             android:src="@drawable/img_destination_one" />
 
                         <ImageView
@@ -248,8 +248,8 @@
                             android:id="@+id/toFavoriteThree"
                             android:layout_width="150dp"
                             android:layout_height="190dp"
-                            android:contentDescription=""
                             android:layout_marginRight="10dp"
+                            android:contentDescription=""
                             android:src="@drawable/img_destination_three" />
 
                         <ImageView
@@ -346,13 +346,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="80dp"
         android:contentDescription="@string/SSName"
         app:backgroundTint="@color/gray_200"
-        app:fabSize="mini"
         app:srcCompat="@drawable/ic_logout"
         app:maxImageSize="16dp"
         android:visibility="invisible"
