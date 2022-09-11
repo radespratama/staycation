@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="center" src="https://github.com/radespratama/staycation/blob/main/static/staycation.png?raw=true" />
+  <img align="center" src="https://github.com/radespratama/staycation/blob/main/static/staycation-banner.png?raw=true" />
   <h2 align="center">Staycation</h2>
 </div> 
 <p align="center">⚡ Traveling Mobile Apps ヾ(≧▽≦*)o</p>
